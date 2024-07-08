@@ -686,6 +686,7 @@ EXPERIENCE SECTION
 .contact {
 	margin-block-start: var(--section-mt);
 	padding: 4rem 1rem;
+	background-color: var(--secondary-clr);
 }
 
 .form-subhead{
@@ -739,13 +740,11 @@ EXPERIENCE SECTION
 		FOOTER
 *************************/
 .footer {
-	margin-block-start: var(--section-mt);
-	background: var(--secondary-clr);
+	background: var(--primary-clr);
 	padding: 0 1rem;
 }
 
 .footer .container {
-	margin-block-start: var(--section-mt);
 	font-size: 1.35rem;
 	padding: 2rem 1rem;
 	display: flex;
@@ -809,7 +808,7 @@ EXPERIENCE SECTION
 	}
 
 	body.open::after {
-		transition: transform 300ms ease-in-out;
+		transition: transform 100ms ease-in-out;
 		transform: translateY(0);
 	}
 
@@ -941,5 +940,10 @@ EXPERIENCE SECTION
 
 	.mail-link {
 		justify-content: center;
+	}
+
+	.experience-img{
+		display: none;
+		
 	}
 }
