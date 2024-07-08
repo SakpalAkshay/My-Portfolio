@@ -21,5 +21,34 @@ const toggleMobileMenu = () => {
 navLinks.forEach(link => link.addEventListener('click', toggleMobileMenu))
 hamburger.addEventListener('click', toggleMobileMenu)
 
+//form event listner
+const form = document.getElementById("contact-form");
+form.addEventListener("submit", formSubmit);
+
+function formSubmit(e){
+	e.preventDefault();
+                const formData = new FormData(e.target);
+
+                console.log(formData);
+
+                       // Check if required fields are empty
+                const name = formData.get('name');
+                const email = formData.get('email');
+                const message = formData.get('message');
+                
+                if (!name || !email || !message) {
+                    alert("Please fill in all the required fields (name, email, and message).");
+                    return;
+                }
+
+                // Check if email is valid
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailPattern.test(email)) {
+                    alert("Please enter a valid email address.");
+                    return;
+                }
+				alert(email)
+}
+
 // initialize aos (library for scroll animation)
 AOS.init()
