@@ -470,6 +470,7 @@ small {
 .my-skills {
 	margin-block-start: var(--section-mt);
 	padding: 4rem 1rem;
+	background-color: var(--secondary-clr);
 }
 
 .my-skills ul {
@@ -478,6 +479,27 @@ small {
 	grid-template-columns: repeat(4, 1fr);
 	gap: 3.2rem 1rem;
 }
+
+/***************************
+EXPERIENCE SECTION
+**********************/
+
+.experiences {
+	margin-block-start: var(--section-my);
+	padding: 4rem 1rem;
+}
+
+.experience-img{
+	transition: opactiy 300ms ease-in-out;
+	position: relative;
+	display: inline-block;
+	height: 100%;
+	border-radius: 5%;
+}
+.experience-img:hover {
+	opacity: 0.9;
+}
+
 
 /*******************
 		PROJECTS SECTION
