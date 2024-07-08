@@ -480,6 +480,21 @@ small {
 	gap: 3.2rem 1rem;
 }
 
+.skill-item{
+	display: flex;
+	justify-content: flex-start;
+}
+
+.skill-item img{
+	width: 30px;
+            /* Adjust the size of the icon */
+    height: 30px;
+            /* Adjust the size of the icon */
+    border-radius: 50%;
+            /* Make it round */
+	margin-right: 10px;
+}
+
 /***************************
 EXPERIENCE SECTION
 **********************/
@@ -494,7 +509,8 @@ EXPERIENCE SECTION
 	position: relative;
 	display: inline-block;
 	height: 100%;
-	border-radius: 5%;
+	width: auto;
+	padding: 25px;
 }
 .experience-img:hover {
 	opacity: 0.9;
